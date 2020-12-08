@@ -1,0 +1,449 @@
+/* VARIABLES */
+
+$negro-institucional: #333333;
+$ancho: 20px;
+
+
+body {
+    background-color: $negro-institucional;
+    max-width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    p {
+        color: white;
+            }
+    }
+
+.text {
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.8;
+}
+
+.title1 {
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', 'Gill Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin-top: -70px;
+    margin-left: 70%;
+    padding: 10px;
+    overflow: hidden;
+    background-color: $negro-institucional;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111111;
+}
+   
+
+/*
+
+footer {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 10px;
+    padding-top: 10px;
+    bottom: 10px;
+    border-style: solid;
+}
+
+*/
+
+.bloqueMayor {
+    margin-bottom: 15%;
+}
+
+#grilla {
+    margin-bottom: 15%;
+}
+
+.mainPodcast {
+    margin-bottom: 15%;
+}
+
+.mainForm {
+    margin-bottom: 15%;
+}
+
+footer {
+    background-image: linear-gradient(to right, black, grey);
+    padding: 5px 10px 5px 10px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-top: 3%;
+}
+
+.videosYoutube {
+    padding: 20px;
+    margin: 5px;
+}
+
+.textoPrincipal {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    /*float: left; */
+}
+
+.bloqueFoto {
+    padding: $ancho/2;
+    margin: $ancho/2;
+}
+
+.seccionGear {
+    margin-top: $ancho*3;
+    padding: $ancho;
+}
+
+.imagenGear {
+    width: $ancho*4;
+    float: left;
+    margin-right: $ancho;
+}
+
+.tablaLibro {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.filaPrimera {
+    font-size: $ancho+2;
+    background-color: teal;
+}
+
+.col1 {
+    width: 270px;
+}
+
+.col2 {
+    width: 100px;
+}
+
+.col3 {
+    width: 100px;
+}
+
+.col4 {
+    width: 200px;
+}
+
+a {
+    color: white;
+}
+
+.mainGear {
+    margin-bottom: 15%;
+}
+
+
+/* aplico flexbox en Videos y MyGear */
+
+.infoCamaras {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+
+/* comentado Flex por uso de Grid 
+
+.ordenVideos {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+*/
+
+.ordenVideos {
+    display: grid;
+    grid-template-areas: "vid1 vid2 vid3" "vid4 vid5 vid6";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    padding-top: 5%;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.vid1 {
+    grid-area: vid1;
+}
+
+.vid2 {
+    grid-area: vid2;
+}
+
+.vid3 {
+    grid-area: vid3;
+}
+
+.vid4 {
+    grid-area: vid4;
+}
+
+.vid5 {
+    grid-area: vid5;
+}
+
+.vid6 {
+    grid-area: vid6;
+}
+
+
+/* Comienzo Formulario */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+    color: #ffffff;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+    color: #ffffff;
+}
+
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+    color: #cbc6c1;
+}
+
+.headerForm {
+    position: relative;
+    margin: 100px 0 25px 0;
+    font-size: 3.3em;
+    text-align: center;
+    letter-spacing: 7px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+#form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+}
+
+input {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: white;
+    border: solid 1px white;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    background: #1d1c1c;
+    color: white;
+}
+
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 0.875em;
+    border: solid 1px white;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: #1d1c1c;
+    color: white;
+}
+
+#submit {
+    width: 470px;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px white;
+    border-top: none;
+}
+
+#submit:hover {
+    color: white;
+}
+
+
+/* Fin Formulario */
+
+.cajaPodcast {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 5%;
+}
+
+
+/* .imagenPrincipal:hover {
+    transform: scale(1.1);
+} */
+
+.btn-primary {
+    background-color: $negro-institucional;
+}
+
+.modal-header {
+    background-color: $negro-institucional;
+    color: #e2dedb;
+}
+
+.modal-body {
+    background-color: $negro-institucional;
+    color: #e2dedb;
+}
+
+.modal-footer {
+    background-color:$negro-institucional;
+    color: #e2dedb;
+}
+
+
+/* videos en mobile */
+
+@media only screen and (max-width: 900px) {
+    .ordenVideos {
+        display: grid;
+        grid-template-areas: "vid1" "vid2" "vid3" "vid4" "vid5" "vid6";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        margin: auto;
+        padding-top: 5%;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+}
