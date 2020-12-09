@@ -3,16 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
   },
-  "author": "fede",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/federicoandino/proyecto_casey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/federicoandino/proyecto_casey/issues"
+  },
+  "homepage": "https://github.com/federicoandino/proyecto_casey#readme"
 }
