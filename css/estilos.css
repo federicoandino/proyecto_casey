@@ -80,11 +80,13 @@ footer {
 
 footer {
   background-image: linear-gradient(to right, black, grey);
-  padding: 5px 10px 5px 10px;
   font-size: 17px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   margin-top: 3%; }
+
+footer {
+  padding: 5px 10px 5px 10px; }
 
 .videosYoutube {
   padding: 20px;
@@ -322,11 +324,13 @@ textarea:hover {
   color: white; }
 
 /* Fin Formulario */
-.cajaPodcast {
+.cajaPodcast, .cajaPodcast--nueva {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
-  justify-content: center;
+  justify-content: center; }
+
+.cajaPodcast--nueva {
   margin: auto;
   padding-top: 5%; }
 
